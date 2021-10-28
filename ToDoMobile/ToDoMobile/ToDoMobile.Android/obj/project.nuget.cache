@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "K+bZ8K9Ni46ETulT58xIKXGR+Px8n7n4RACAH4j0eUsSLgWgsby5vJFEuVadbjW4j+IfkUVjplEyhKaM+0uL3Q==",
+  "dgSpecHash": "rCfxKBWl2mmdwO/DjDFVRXw76PiYVlthx/ngUY2BjHmr7UR1gTujCvvFT/gLn4VEv14fwRomFZxZ+tpw+x6CjQ==",
   "success": true,
   "projectFilePath": "D:\\ToDoListProject\\XamarinToDo\\ToDoMobile\\ToDoMobile\\ToDoMobile.Android\\ToDoMobile.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\sebba\\.nuget\\packages\\microsoft.bcl\\1.1.10\\microsoft.bcl.1.1.10.nupkg.sha512",
+    "C:\\Users\\sebba\\.nuget\\packages\\microsoft.bcl.build\\1.0.14\\microsoft.bcl.build.1.0.14.nupkg.sha512",
+    "C:\\Users\\sebba\\.nuget\\packages\\microsoft.net.http\\2.2.29\\microsoft.net.http.2.2.29.nupkg.sha512",
     "C:\\Users\\sebba\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.5\\xamarin.androidx.activity.1.1.0.5.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation\\1.1.0.8\\xamarin.androidx.annotation.1.1.0.8.nupkg.sha512",

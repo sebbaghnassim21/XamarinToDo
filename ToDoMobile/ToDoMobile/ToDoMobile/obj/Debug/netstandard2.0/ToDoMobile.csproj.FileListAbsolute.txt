@@ -1,0 +1,16 @@
+D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile\bin\Debug\netstandard2.0\ToDoMobile.deps.json
+D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile\bin\Debug\netstandard2.0\ToDoMobile.dll
+D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile\bin\Debug\netstandard2.0\ref\ToDoMobile.dll
+D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile\bin\Debug\netstandard2.0\ToDoMobile.pdb
+D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile\obj\Debug\netstandard2.0\ToDoMobile.AssemblyInfoInputs.cache
+D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile\obj\Debug\netstandard2.0\ToDoMobile.AssemblyInfo.cs
+D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile\obj\Debug\netstandard2.0\ToDoMobile.csproj.CoreCompileInputs.cache
+D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile\obj\Debug\netstandard2.0\XamlC.stamp
+D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile\obj\Debug\netstandard2.0\ToDoMobile.dll
+D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile\obj\Debug\netstandard2.0\ref\ToDoMobile.dll
+D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile\obj\Debug\netstandard2.0\ToDoMobile.pdb
+D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile\obj\Debug\netstandard2.0\ToDoMobile.csprojAssemblyReference.cache
+D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile\obj\Debug\netstandard2.0\Views\RegisterPage.xaml.g.cs

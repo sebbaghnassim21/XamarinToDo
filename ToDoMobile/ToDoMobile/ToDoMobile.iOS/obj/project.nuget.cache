@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "BU/aiCUc3JY6b34z/diW/Hr5CSfyJfjUA5ABBgC8uK3okWFm9O0sFIHg2f5jdxp2gaVah/nKAp70HDYhL1lmwA==",
+  "dgSpecHash": "9o8y3LUwb18Lvs/k8t9gHlFF5n4Rf5N7ywbonT3XMSmr3m/mav3Ef3/NiuC4b0BAP6cWrzy2x/W1vuxW4Vx0rQ==",
   "success": true,
   "projectFilePath": "D:\\ToDoListProject\\XamarinToDo\\ToDoMobile\\ToDoMobile\\ToDoMobile.iOS\\ToDoMobile.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\sebba\\.nuget\\packages\\microsoft.bcl\\1.1.10\\microsoft.bcl.1.1.10.nupkg.sha512",
+    "C:\\Users\\sebba\\.nuget\\packages\\microsoft.bcl.build\\1.0.14\\microsoft.bcl.build.1.0.14.nupkg.sha512",
+    "C:\\Users\\sebba\\.nuget\\packages\\microsoft.net.http\\2.2.29\\microsoft.net.http.2.2.29.nupkg.sha512",
     "C:\\Users\\sebba\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"

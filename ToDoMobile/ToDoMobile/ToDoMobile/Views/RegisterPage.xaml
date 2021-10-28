@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToDoMobile.Views.RegisterPage"
+             xmlns:vm="ToDoMobile.ViewModel" 
+             xmlns:viewModel="clr-namespace:ToDoMobile.ViewModel">
+    <ContentPage.BindingContext>
+        <viewModel:RegisterViewModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout Orientation="Vertical">
+        <Entry Text="{Binding Email}" Placeholder="Email"></Entry>
+        <Entry Text="{Binding Password}" Placeholder="password" IsPassword="True"/>
+        <Entry Text="{Binding ConfirmPassword}" Placeholder="confirm password" IsPassword="True"/>
+        <Button Text="Enregistrer" Command="{Binding RegisterCommand}" ></Button>
+
+    </StackLayout>
+</ContentPage>
