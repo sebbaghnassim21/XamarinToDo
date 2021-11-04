@@ -4,6 +4,7 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "ToDoMobile.Android.dll" comes first in this list. */
 		"ToDoMobile.Android.dll",
 		"FormsViewGroup.dll",
+		"Newtonsoft.Json.dll",
 		"System.Net.Http.Extensions.dll",
 		"System.Net.Http.Primitives.dll",
 		"ToDoMobile.dll",

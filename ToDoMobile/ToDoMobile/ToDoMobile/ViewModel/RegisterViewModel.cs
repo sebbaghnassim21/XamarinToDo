@@ -9,9 +9,11 @@ namespace ToDoMobile.ViewModel
 {
     class RegisterViewModel
     {
-        public string Email { get; set; }
-        public string Password { get; set; }
-        public string ConfirmPassword { get; set; }
+        public string firstName { get; set; }
+        public string lastName { get; set; }
+        public string email { get; set; }
+        public string password { get; set; }
+        public string confirmPassword { get; set; }
 
         ApiServices _apiservices = new ApiServices();
 
@@ -21,9 +23,10 @@ namespace ToDoMobile.ViewModel
 
             get
             {
-                return new Command(() =>
+                return new Command(async() =>
                 {
-                    _apiservices.RegisterAsync(Email ,Password,ConfirmPassword);
+
+                   await _apiservices.RegisterAsync(firstName, lastName, email, password,confirmPassword);
                 }
                 );
             }

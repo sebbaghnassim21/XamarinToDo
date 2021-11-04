@@ -578,3 +578,4 @@ D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile.Android\obj\Debu
 D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile.Android\obj\Debug\110\android\assets\System.Net.Http.Primitives.dll
 D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile.Android\obj\Debug\110\android\assets\System.Net.Primitives.dll
 D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile.Android\obj\Debug\110\android\assets\System.Runtime.InteropServices.dll
+D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile.Android\obj\Debug\110\android\assets\Newtonsoft.Json.dll

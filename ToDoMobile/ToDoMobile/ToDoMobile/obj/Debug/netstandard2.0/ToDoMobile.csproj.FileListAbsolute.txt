@@ -14,3 +14,4 @@ D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile\obj\Debug\netsta
 D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile\obj\Debug\netstandard2.0\ToDoMobile.csprojAssemblyReference.cache
 D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
 D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile\obj\Debug\netstandard2.0\Views\RegisterPage.xaml.g.cs
+D:\ToDoListProject\XamarinToDo\ToDoMobile\ToDoMobile\ToDoMobile\obj\Debug\netstandard2.0\Views\ToDoPage.xaml.g.cs

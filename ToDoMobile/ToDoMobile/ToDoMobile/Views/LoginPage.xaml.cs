@@ -16,5 +16,10 @@ namespace ToDoMobile.Views
         {
             InitializeComponent();
         }
+
+        private void Register(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new RegisterPage());
+        }
     }
 }
