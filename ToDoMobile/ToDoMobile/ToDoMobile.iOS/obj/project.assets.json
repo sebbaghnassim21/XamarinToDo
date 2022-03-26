@@ -2,6 +2,37 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
+      "DevExpress.XamarinForms.Core/21.2.6": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.dll": {},
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.dll": {},
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.iOS.dll": {}
+        }
+      },
+      "DevExpress.XamarinForms.Scheduler/21.2.6": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.XamarinForms.Core": "[21.2.6]",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/DevExpress.Xamarin.iOS.Scheduler.dll": {},
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Scheduler.dll": {},
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Scheduler.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/DevExpress.Xamarin.iOS.Scheduler.dll": {},
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Scheduler.dll": {},
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Scheduler.iOS.dll": {}
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "type": "package",
         "dependencies": {
@@ -16,6 +47,18 @@
       },
       "Microsoft.Bcl.Build/1.0.14": {
         "type": "package"
+      },
+      "Microsoft.CSharp/4.7.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
       },
       "Microsoft.Net.Http/2.2.29": {
         "type": "package",
@@ -48,6 +91,17 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xam.Plugins.Settings/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Settings.dll": {}
         }
       },
       "Xamarin.Essentials/1.6.1": {
@@ -194,8 +248,11 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "DevExpress.XamarinForms.Scheduler": "21.2.6",
+          "Microsoft.CSharp": "4.7.0",
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "13.0.1",
+          "Xam.Plugins.Settings": "3.1.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012"
         },
@@ -208,6 +265,37 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
+      "DevExpress.XamarinForms.Core/21.2.6": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.dll": {},
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.dll": {},
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.iOS.dll": {}
+        }
+      },
+      "DevExpress.XamarinForms.Scheduler/21.2.6": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.XamarinForms.Core": "[21.2.6]",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/DevExpress.Xamarin.iOS.Scheduler.dll": {},
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Scheduler.dll": {},
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Scheduler.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/DevExpress.Xamarin.iOS.Scheduler.dll": {},
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Scheduler.dll": {},
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Scheduler.iOS.dll": {}
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "type": "package",
         "dependencies": {
@@ -222,6 +310,18 @@
       },
       "Microsoft.Bcl.Build/1.0.14": {
         "type": "package"
+      },
+      "Microsoft.CSharp/4.7.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
       },
       "Microsoft.Net.Http/2.2.29": {
         "type": "package",
@@ -254,6 +354,17 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xam.Plugins.Settings/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Settings.dll": {}
         }
       },
       "Xamarin.Essentials/1.6.1": {
@@ -400,8 +511,11 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "DevExpress.XamarinForms.Scheduler": "21.2.6",
+          "Microsoft.CSharp": "4.7.0",
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "13.0.1",
+          "Xam.Plugins.Settings": "3.1.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012"
         },
@@ -414,6 +528,37 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
+      "DevExpress.XamarinForms.Core/21.2.6": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.dll": {},
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.dll": {},
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.iOS.dll": {}
+        }
+      },
+      "DevExpress.XamarinForms.Scheduler/21.2.6": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.XamarinForms.Core": "[21.2.6]",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/DevExpress.Xamarin.iOS.Scheduler.dll": {},
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Scheduler.dll": {},
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Scheduler.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/DevExpress.Xamarin.iOS.Scheduler.dll": {},
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Scheduler.dll": {},
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Scheduler.iOS.dll": {}
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "type": "package",
         "dependencies": {
@@ -428,6 +573,18 @@
       },
       "Microsoft.Bcl.Build/1.0.14": {
         "type": "package"
+      },
+      "Microsoft.CSharp/4.7.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
       },
       "Microsoft.Net.Http/2.2.29": {
         "type": "package",
@@ -460,6 +617,17 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xam.Plugins.Settings/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Settings.dll": {}
         }
       },
       "Xamarin.Essentials/1.6.1": {
@@ -606,8 +774,11 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "DevExpress.XamarinForms.Scheduler": "21.2.6",
+          "Microsoft.CSharp": "4.7.0",
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "13.0.1",
+          "Xam.Plugins.Settings": "3.1.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012"
         },
@@ -620,6 +791,37 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
+      "DevExpress.XamarinForms.Core/21.2.6": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.dll": {},
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.dll": {},
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.iOS.dll": {}
+        }
+      },
+      "DevExpress.XamarinForms.Scheduler/21.2.6": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.XamarinForms.Core": "[21.2.6]",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/DevExpress.Xamarin.iOS.Scheduler.dll": {},
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Scheduler.dll": {},
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Scheduler.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/DevExpress.Xamarin.iOS.Scheduler.dll": {},
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Scheduler.dll": {},
+          "lib/Xamarin.iOS10/DevExpress.XamarinForms.Scheduler.iOS.dll": {}
+        }
+      },
       "Microsoft.Bcl/1.1.10": {
         "type": "package",
         "dependencies": {
@@ -634,6 +836,18 @@
       },
       "Microsoft.Bcl.Build/1.0.14": {
         "type": "package"
+      },
+      "Microsoft.CSharp/4.7.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
       },
       "Microsoft.Net.Http/2.2.29": {
         "type": "package",
@@ -666,6 +880,17 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xam.Plugins.Settings/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Settings.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Settings.dll": {}
         }
       },
       "Xamarin.Essentials/1.6.1": {
@@ -812,8 +1037,11 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "DevExpress.XamarinForms.Scheduler": "21.2.6",
+          "Microsoft.CSharp": "4.7.0",
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "13.0.1",
+          "Xam.Plugins.Settings": "3.1.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012"
         },
@@ -827,6 +1055,46 @@
     }
   },
   "libraries": {
+    "DevExpress.XamarinForms.Core/21.2.6": {
+      "sha512": "p1b8To3HDORqbuPhVzDWR8+9MBwz3wojqILhGeBgY/N6LszXBvk/lr4teSSSScH8glsy+aFLRc+va/GKL8LAYw==",
+      "type": "package",
+      "path": "devexpress.xamarinforms.core/21.2.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.xamarinforms.core.21.2.6.nupkg.sha512",
+        "devexpress.xamarinforms.core.nuspec",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Core.Android.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Core.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Core.xml",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.iOS.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Core.xml",
+        "lib/netstandard2.0/DevExpress.XamarinForms.Core.dll",
+        "lib/netstandard2.0/DevExpress.XamarinForms.Core.xml"
+      ]
+    },
+    "DevExpress.XamarinForms.Scheduler/21.2.6": {
+      "sha512": "kCqDElCEGlxP5PGe3nySNtwWX0SRyNVHrI2/gXCW1p/8QiuW6ARuHn6KGgLoiLZVadkrWAkqBeVFno/gB3DK4Q==",
+      "type": "package",
+      "path": "devexpress.xamarinforms.scheduler/21.2.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.xamarinforms.scheduler.21.2.6.nupkg.sha512",
+        "devexpress.xamarinforms.scheduler.nuspec",
+        "lib/MonoAndroid10/DevExpress.Xamarin.Android.Scheduler.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Scheduler.Android.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Scheduler.dll",
+        "lib/MonoAndroid10/DevExpress.XamarinForms.Scheduler.xml",
+        "lib/Xamarin.iOS10/DevExpress.Xamarin.iOS.Scheduler.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Scheduler.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Scheduler.iOS.dll",
+        "lib/Xamarin.iOS10/DevExpress.XamarinForms.Scheduler.xml",
+        "lib/netstandard2.0/DevExpress.XamarinForms.Scheduler.dll",
+        "lib/netstandard2.0/DevExpress.XamarinForms.Scheduler.xml"
+      ]
+    },
     "Microsoft.Bcl/1.1.10": {
       "sha512": "+tTqoh/M1pyL8El3qLy30EcwnAtyvFoDZJtdG9Cbg/WdFbh4N8kyrq198XHuEL7lnJbeD0DRO8jcX5IIOh05cQ==",
       "type": "package",
@@ -939,6 +1207,75 @@
         "tools/Microsoft.Bcl.Build.Tasks.dll",
         "tools/Microsoft.Bcl.Build.targets",
         "tools/Uninstall.ps1"
+      ]
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "type": "package",
+      "path": "microsoft.csharp/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Microsoft.Net.Http/2.2.29": {
@@ -1082,6 +1419,74 @@
         "system.numerics.vectors.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Xam.Plugins.Settings/3.1.1": {
+      "sha512": "EQEYQJ64ZLqui5GWkLMavgqitHxwUHZHryTzUD1021UBuz1XwDSjPL45W0K4pPXjz9oKbg7YpRXKPR1luPr/5Q==",
+      "type": "package",
+      "path": "xam.plugins.settings/3.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/MonoAndroid10/Helpers/Settings.cs.pp",
+        "content/UAP10/Helpers/Settings.cs.pp",
+        "content/Xamarin.Mac20/Helpers/Settings.cs.pp",
+        "content/Xamarin.iOS10/Helpers/Settings.cs.pp",
+        "content/net45/Helpers/Settings.cs.pp",
+        "content/netstandard1.0/Helpers/Settings.cs.pp",
+        "content/xamarintvOS/Helpers/Settings.cs.pp",
+        "content/xamarinwatchOS/Helpers/Settings.cs.pp",
+        "lib/MonoAndroid10/Plugin.Settings.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Settings.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Settings.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Settings.dll",
+        "lib/MonoAndroid10/Plugin.Settings.pdb",
+        "lib/MonoAndroid10/Plugin.Settings.xml",
+        "lib/UAP10/Plugin.Settings.Abstractions.dll",
+        "lib/UAP10/Plugin.Settings.Abstractions.pdb",
+        "lib/UAP10/Plugin.Settings.Abstractions.xml",
+        "lib/UAP10/Plugin.Settings.XML",
+        "lib/UAP10/Plugin.Settings.dll",
+        "lib/UAP10/Plugin.Settings.pdb",
+        "lib/UAP10/Plugin.Settings.pri",
+        "lib/Xamarin.Mac20/Plugin.Settings.Abstractions.dll",
+        "lib/Xamarin.Mac20/Plugin.Settings.Abstractions.pdb",
+        "lib/Xamarin.Mac20/Plugin.Settings.Abstractions.xml",
+        "lib/Xamarin.Mac20/Plugin.Settings.XML",
+        "lib/Xamarin.Mac20/Plugin.Settings.dll",
+        "lib/Xamarin.Mac20/Plugin.Settings.pdb",
+        "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Settings.dll",
+        "lib/Xamarin.iOS10/Plugin.Settings.xml",
+        "lib/net45/Plugin.Settings.Abstractions.dll",
+        "lib/net45/Plugin.Settings.Abstractions.pdb",
+        "lib/net45/Plugin.Settings.Abstractions.xml",
+        "lib/net45/Plugin.Settings.XML",
+        "lib/net45/Plugin.Settings.dll",
+        "lib/net45/Plugin.Settings.pdb",
+        "lib/netstandard1.0/Plugin.Settings.Abstractions.dll",
+        "lib/netstandard1.0/Plugin.Settings.Abstractions.pdb",
+        "lib/netstandard1.0/Plugin.Settings.Abstractions.xml",
+        "lib/netstandard1.0/Plugin.Settings.deps.json",
+        "lib/netstandard1.0/Plugin.Settings.dll",
+        "lib/netstandard1.0/Plugin.Settings.xml",
+        "lib/xamarintvOS/Plugin.Settings.Abstractions.dll",
+        "lib/xamarintvOS/Plugin.Settings.Abstractions.pdb",
+        "lib/xamarintvOS/Plugin.Settings.Abstractions.xml",
+        "lib/xamarintvOS/Plugin.Settings.dll",
+        "lib/xamarintvOS/Plugin.Settings.pdb",
+        "lib/xamarintvOS/Plugin.Settings.xml",
+        "lib/xamarinwatchOS/Plugin.Settings.Abstractions.dll",
+        "lib/xamarinwatchOS/Plugin.Settings.Abstractions.pdb",
+        "lib/xamarinwatchOS/Plugin.Settings.Abstractions.xml",
+        "lib/xamarinwatchOS/Plugin.Settings.dll",
+        "lib/xamarinwatchOS/Plugin.Settings.pdb",
+        "lib/xamarinwatchOS/Plugin.Settings.xml",
+        "readme.txt",
+        "xam.plugins.settings.3.1.1.nupkg.sha512",
+        "xam.plugins.settings.nuspec"
       ]
     },
     "Xamarin.Essentials/1.6.1": {
@@ -1359,8 +1764,11 @@
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
+      "DevExpress.XamarinForms.Scheduler >= 21.2.6",
+      "Microsoft.CSharp >= 4.7.0",
       "Microsoft.Net.Http >= 2.2.29",
       "ToDoMobile >= 1.0.0",
+      "Xam.Plugins.Settings >= 3.1.1",
       "Xamarin.Essentials >= 1.6.1",
       "Xamarin.Forms >= 5.0.0.2012"
     ]
@@ -1411,9 +1819,21 @@
     "frameworks": {
       "xamarinios10": {
         "dependencies": {
+          "DevExpress.XamarinForms.Scheduler": {
+            "target": "Package",
+            "version": "[21.2.6, )"
+          },
+          "Microsoft.CSharp": {
+            "target": "Package",
+            "version": "[4.7.0, )"
+          },
           "Microsoft.Net.Http": {
             "target": "Package",
             "version": "[2.2.29, )"
+          },
+          "Xam.Plugins.Settings": {
+            "target": "Package",
+            "version": "[3.1.1, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",

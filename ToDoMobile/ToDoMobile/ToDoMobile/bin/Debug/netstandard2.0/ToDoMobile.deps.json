@@ -9,14 +9,40 @@
     ".NETStandard,Version=v2.0/": {
       "ToDoMobile/1.0.0": {
         "dependencies": {
+          "DevExpress.XamarinForms.Scheduler": "21.2.6",
+          "Microsoft.CSharp": "4.7.0",
           "Microsoft.Net.Http": "2.2.29",
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "13.0.1",
+          "Xam.Plugins.Settings": "3.1.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012"
         },
         "runtime": {
           "ToDoMobile.dll": {}
+        }
+      },
+      "DevExpress.XamarinForms.Core/21.2.6": {
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "runtime": {
+          "lib/netstandard2.0/DevExpress.XamarinForms.Core.dll": {
+            "assemblyVersion": "21.2.6.0",
+            "fileVersion": "21.2.6.0"
+          }
+        }
+      },
+      "DevExpress.XamarinForms.Scheduler/21.2.6": {
+        "dependencies": {
+          "DevExpress.XamarinForms.Core": "21.2.6",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "runtime": {
+          "lib/netstandard2.0/DevExpress.XamarinForms.Scheduler.dll": {
+            "assemblyVersion": "21.2.6.0",
+            "fileVersion": "21.2.6.0"
+          }
         }
       },
       "Microsoft.Bcl/1.1.10": {
@@ -25,6 +51,14 @@
         }
       },
       "Microsoft.Bcl.Build/1.0.14": {},
+      "Microsoft.CSharp/4.7.0": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.CSharp.dll": {
+            "assemblyVersion": "4.0.5.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        }
+      },
       "Microsoft.Net.Http/2.2.29": {
         "dependencies": {
           "Microsoft.Bcl": "1.1.10",
@@ -63,6 +97,21 @@
           }
         }
       },
+      "Xam.Plugins.Settings/3.1.1": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Plugin.Settings.Abstractions.dll": {
+            "assemblyVersion": "3.1.1.0",
+            "fileVersion": "3.1.1.0"
+          },
+          "lib/netstandard1.0/Plugin.Settings.dll": {
+            "assemblyVersion": "3.1.1.0",
+            "fileVersion": "3.1.1.0"
+          }
+        }
+      },
       "Xamarin.Essentials/1.6.1": {
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -98,6 +147,20 @@
       "serviceable": false,
       "sha512": ""
     },
+    "DevExpress.XamarinForms.Core/21.2.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-p1b8To3HDORqbuPhVzDWR8+9MBwz3wojqILhGeBgY/N6LszXBvk/lr4teSSSScH8glsy+aFLRc+va/GKL8LAYw==",
+      "path": "devexpress.xamarinforms.core/21.2.6",
+      "hashPath": "devexpress.xamarinforms.core.21.2.6.nupkg.sha512"
+    },
+    "DevExpress.XamarinForms.Scheduler/21.2.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kCqDElCEGlxP5PGe3nySNtwWX0SRyNVHrI2/gXCW1p/8QiuW6ARuHn6KGgLoiLZVadkrWAkqBeVFno/gB3DK4Q==",
+      "path": "devexpress.xamarinforms.scheduler/21.2.6",
+      "hashPath": "devexpress.xamarinforms.scheduler.21.2.6.nupkg.sha512"
+    },
     "Microsoft.Bcl/1.1.10": {
       "type": "package",
       "serviceable": true,
@@ -111,6 +174,13 @@
       "sha512": "sha512-cDLKSvNvRa519hplsbSoYqO69TjdDIhfjtKUM0g20/nVROoWsGav9KCI9HtnGjLmdV1+TcUUDhbotcllibjPEA==",
       "path": "microsoft.bcl.build/1.0.14",
       "hashPath": "microsoft.bcl.build.1.0.14.nupkg.sha512"
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
     },
     "Microsoft.Net.Http/2.2.29": {
       "type": "package",
@@ -146,6 +216,13 @@
       "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "path": "system.numerics.vectors/4.5.0",
       "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
+    },
+    "Xam.Plugins.Settings/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EQEYQJ64ZLqui5GWkLMavgqitHxwUHZHryTzUD1021UBuz1XwDSjPL45W0K4pPXjz9oKbg7YpRXKPR1luPr/5Q==",
+      "path": "xam.plugins.settings/3.1.1",
+      "hashPath": "xam.plugins.settings.3.1.1.nupkg.sha512"
     },
     "Xamarin.Essentials/1.6.1": {
       "type": "package",

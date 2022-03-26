@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -30,12 +31,14 @@ namespace ToDoMobile.Services
 
             HttpContent content = new StringContent(json, Encoding.UTF8, "application/json"); 
 
-            await Client.PostAsync("https://d9f9-41-100-129-112.ngrok.io/adduser", content);
+            await Client.PostAsync("https://0cfd-85-234-131-122.ngrok.io/adduser", content);
         }
 
-        public async Task<bool> LoginAsync( string username ,string password)
+        public async Task<string> LoginAsync( string username ,string password)
         {
+#pragma warning disable CS0219 // La variable 'operationSuccess' est assignée, mais sa valeur n'est jamais utilisée
             bool operationSuccess = false;
+#pragma warning restore CS0219 // La variable 'operationSuccess' est assignée, mais sa valeur n'est jamais utilisée
             var keyValues = new List<KeyValuePair<string, string>>
             {
                  new KeyValuePair<string, string>("username",username),
@@ -46,22 +49,28 @@ namespace ToDoMobile.Services
             };
 
             var request = new HttpRequestMessage(
-                HttpMethod.Post, "https://3e93-41-100-166-161.ngrok.io/auth/realms/ToDoAppRealm/protocol/openid-connect/token");
+                HttpMethod.Post, "https://712b-85-234-131-122.ngrok.io/auth/realms/ToDoAppRealm/protocol/openid-connect/token");
 
             request.Content = new FormUrlEncodedContent(keyValues);
            
             var client = new HttpClient();
             
             var response=await client.SendAsync(request);
-            if (response.IsSuccessStatusCode) {
 
-                operationSuccess = true;
-                
-            }
-            return operationSuccess;
+            var jwt = await response.Content.ReadAsStringAsync();
+            JObject jwtDynamic = JsonConvert.DeserializeObject<dynamic>(jwt);
+            var accesstoken = jwtDynamic.Value<string>("access_token"); 
+            Debug.WriteLine(jwt);
+            return accesstoken;
+        }
 
-
-            // Debug.WriteLine(await response.Content.ReadAsStringAsync);
+        public async Task<List<TaskToDo>> GetTaskToDo(string accessToken)
+        {
+            var client = new HttpClient();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
+            var json = await client.GetStringAsync("https://0cfd-85-234-131-122.ngrok.io/tasks/search/findTaskByUser?user=1");
+            var Task=JsonConvert.DeserializeObject<List<TaskToDo>>(json);
+            return Task;
         }
     }
 }

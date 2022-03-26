@@ -3,8 +3,15 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "ToDoMobile.Android.dll" comes first in this list. */
 		"ToDoMobile.Android.dll",
+		"DevExpress.Xamarin.Android.Scheduler.dll",
+		"DevExpress.XamarinForms.Core.Android.dll",
+		"DevExpress.XamarinForms.Core.dll",
+		"DevExpress.XamarinForms.Scheduler.Android.dll",
+		"DevExpress.XamarinForms.Scheduler.dll",
 		"FormsViewGroup.dll",
 		"Newtonsoft.Json.dll",
+		"Plugin.Settings.Abstractions.dll",
+		"Plugin.Settings.dll",
 		"System.Net.Http.Extensions.dll",
 		"System.Net.Http.Primitives.dll",
 		"ToDoMobile.dll",
